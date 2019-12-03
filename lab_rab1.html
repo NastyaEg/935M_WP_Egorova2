@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Лабораторная работа №1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<style type="text/css">
+		.table1 { border-collapse: collapse; }
+        .table1 tr { height: 25px; }
+        .table1 td, th {
+            border: 1px solid #000;
+            width: 50px;
+			background-color: white;
+        }
+        .widthfix {
+            visibility: hidden;
+            height: 0;
+        }
+        .blue { background-color: blue !important; }
+        .green { background-color: green !important; }
+        .red { background-color: red !important; }
+        .yellow { background-color: yellow !important; }
+		
+		tr { height: 45px; }
+		td {
+			border: 1px solid #000;
+			width: 50px;
+		}
+		.first {
+			width: 75em;
+		}
+	</style>
+</head>
+<body>
+
+<!-- <table class="menu">
+					<tr>
+						<td>
+							<a href="index.html"><img src="значок.png" width="300" height="200" alt="5"/></a>
+						</td>
+					</tr>
+				</table> -->
+<a href="index.html"><img src="значок.png" width="400" height="200" alt="5"/></a>
+<h3>Табличная структура:</h3>
+<table class="table1">
+        <tr>
+            <td rowspan="2" colspan="8"></td>
+        </tr>
+		<tr></tr>
+        <tr>
+            <td rowspan="6" colspan="1"></td>
+            <td rowspan="4" colspan="1"></td>
+            <td rowspan="2" colspan="5"></td>
+            <td rowspan="8" colspan="1" class="yellow"></td>
+        </tr>
+		<tr></tr>
+        <tr>
+            <td rowspan="1" colspan="1" class="red"></td>
+			<td rowspan="1" colspan="1"></td>
+			<td rowspan="1" colspan="1"></td>
+			<td rowspan="1" colspan="1" class="blue"></td>
+			<td rowspan="4" colspan="1"></td>
+        </tr>
+        <tr>
+			<td rowspan="1" colspan="1"></td>
+			<td rowspan="1" colspan="1"></td>
+			<td rowspan="1" colspan="1"></td>
+			<td rowspan="1" colspan="1"></td>
+        </tr>
+        <tr>
+			<td rowspan="2" colspan="5" class="green"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td rowspan="2" colspan="7"></td>
+		</tr>
+		<tr></tr>
+        <tr class="widthfix">
+            <th></th><th></th><th></th><th></th>
+            <th></th><th></th><th></th><th></th>
+        </tr>
+    </table>
+<h3>Форма заявки в службу технической поддержки:</h3>
+<form action="POST">
+<table class="table2">
+ 	<tr>
+ 		<td>ФИО: </td>
+    	<td> <input type="text" name="fromfio" size="79" maxlength="70" /></td>
+  	</tr>
+ 	 <tr>
+    	<td>E-mail:</td>
+    	<td> <input type="text" name="fromaddress" size="79" maxlength="200" /></td>
+  	</tr>
+  	<tr>
+    	<td>Номер заказа: </td>
+    	<td> <input type="text" name="fromnumber" size="79" maxlength="20" /></td>
+  	</tr>
+  	<tr>
+    	<td>Адрес покупателя: </td>
+    	<td> <input type="text" name="foraddress" size="79" maxlength="200" /></td>
+  	</tr>
+	<tr>
+    	<td>Номер телефона: </td>
+    	<td> <input type="text" name="forphone" size="79" maxlength="20" /></td>
+  	</tr>
+  	<tr>
+    	<td colspan="2">Вид заказа:</td>
+  	</tr>
+  	<tr>
+    	<td>
+     		<input type="radio" name="package" value="yes" />Смартфоны<br/>
+     		<input type="radio" name="package" value="yes" />Аксессуары для смартфонов<br/>
+    	</td>
+    	<td>
+     		<input type="radio" name="package" value="yes" />Гаджеты<br/>
+     		<input type="radio" name="package" value="yes" />Планшеты и электронные книги<br/>
+   	 	</td>
+  	</tr>
+	<tr>
+    	<td colspan="2">Оплата безналичным расчётом: </td>
+  	</tr>
+	<tr>
+ 		<td colspan="2">
+		<input type="checkbox" name="pay" value="yes" />Да<br/>
+		</td>
+  	</tr>
+  	<tr>
+ 		<td>Дата покупки: </td>
+    	<td> <input type="text" name="data" size="79" maxlength="20" /></td>
+  	</tr>
+	<tr>
+ 		<td >Стоимость: </td>
+    	<td > <input type="text" name="ammount" size="79" maxlength="20" /></td>
+  	</tr>
+</table>
+<br/>
+<div class="mytext">
+<textarea name="comments" cols="40" rows="4">
+Комментарий к заявке:
+</textarea>
+<br/>
+<input type="submit" value="Отправить" />
+<input type="reset" value="Сброс данных" />
+</div>
+</form>
+</body>
+</html>
